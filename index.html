@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruleta de la Fortuna - Carmoni Nueces Confitadas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Carmoni Nueces Confitadas</h1>
+            <h2>¡Celebramos el Día de la Mujer y nuestro 22° Aniversario!</h2>
+        </header>
+
+        <div class="promo-info">
+            <p class="promo-text">Gira la ruleta y gana increíbles descuentos en nuestras deliciosas nueces confitadas.</p>
+            <p class="validity">Promoción válida hasta el 8 de marzo de 2025 a las 23:59hs.</p>
+        </div>
+
+        <div id="form-section" class="form-section">
+            <h3>Ingresa tus datos para participar</h3>
+            <form id="user-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+                <button type="submit" class="btn-submit">¡Quiero participar!</button>
+            </form>
+        </div>
+
+        <div id="wheel-section" class="wheel-section hidden">
+            <div class="wheel-container">
+                <canvas id="canvas" width="500" height="500"></canvas>
+                <div id="spin-btn">GIRAR</div>
+                <div id="final-value">
+                    <p>Haz clic en GIRAR para probar suerte</p>
+                </div>
+            </div>
+            <div id="result" class="result hidden">
+                <h3>¡Felicidades!</h3>
+                <p id="prize-text"></p>
+                <div class="coupon">
+                    <p>Código de promoción: <span id="coupon-code"></span></p>
+                    <p class="validity">Válido hasta el 8 de Marzo de 2025</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-section">
+            <h3>Sobre Carmoni Nueces Confitadas</h3>
+            <p>Desde hace 22 años, nos especializamos en la producción artesanal de Nueces Confitadas sin TACC.</p>
+            <img src="imagenes/16033016344653.ico" alt="Nueces Confitadas Carmoni" class="about-image">
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Carmoni Nueces Confitadas - Todos los derechos reservados</p>
+            <p class="small">Promoción válida hasta el 8 de marzo de 2025 a las 23:59hs tanto para jugar como para canjear.</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

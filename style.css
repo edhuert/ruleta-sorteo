@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #f9f3e6;
+    color: #4a3933;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: #8b4513;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.promo-info {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.promo-text {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.validity {
+    font-weight: 600;
+    color: #d35400;
+}
+
+.form-section {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.form-section h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #8b4513;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn-submit {
+    background-color: #8b4513;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #6d3609;
+}
+
+.wheel-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.wheel-container {
+    position: relative;
+    width: 500px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+#canvas {
+    max-width: 100%;
+    height: auto;
+}
+
+#spin-btn {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    background-color: #8b4513;
+    border-radius: 50%;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    font-size: 16px;
+}
+
+#spin-btn:hover {
+    background-color: #6d3609;
+}
+
+#final-value {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.hidden {
+    display: none;
+}
+
+.result {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    text-align: center;
+}
+
+.result h3 {
+    color: #8b4513;
+    margin-bottom: 15px;
+}
+
+.coupon {
+    background-color: #f9f3e6;
+    padding: 15px;
+    border: 2px dashed #8b4513;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.coupon p {
+    margin-bottom: 10px;
+}
+
+#coupon-code {
+    font-weight: bold;
+    font-size: 20px;
+    color: #d35400;
+}
+
+.about-section {
+    text-align: center;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.about-image {
+    max-width: 100%; /* La imagen no será más ancha que su contenedor */
+    height: auto; /* Mantener la proporción de la imagen */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-bottom: 5px; /* Espacio debajo de la imagen */
+    margin-top: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para la imagen */
+}
+
+.about-section h3 {
+    color: #8b4513;
+    margin-bottom: 15px;
+}
+
+.about-section p {
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.small {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .wheel-container {
+        width: 320px;
+    }
+    
+    #spin-btn {
+        width: 60px;
+        height: 60px;
+        font-size: 14px;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+    
+    h2 {
+        font-size: 18px;
+    }
+}
